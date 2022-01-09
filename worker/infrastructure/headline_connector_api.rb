@@ -11,8 +11,8 @@ module HeadlineConnector
         @request = Request.new(@config)
       end
 
-      def get_articles()
-        @request.get_articles()
+      def get_headline_cluster()
+        @request.get_headline_cluster()
       end
 
       def generate_textCloud(keyword)
@@ -30,7 +30,7 @@ module HeadlineConnector
           call_api('get')
         end
 
-        def get_articles()
+        def get_headline_cluster()
           call_api('get', ['articles'])
         end
 
